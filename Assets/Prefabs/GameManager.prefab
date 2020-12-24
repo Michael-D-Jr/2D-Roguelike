@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2280985869098775782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2280985869098775778}
+  - component: {fileID: 2280985869098775777}
+  - component: {fileID: 1575914313400473321}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2280985869098775778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2280985869098775782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2280985869098775777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2280985869098775782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff198b7cf94550544b3a67852b103dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 863788569125603675, guid: 23c5dd851d1e2d847a36956866f1cdff, type: 3}
+  floorTiles:
+  - {fileID: 2804526903767932330, guid: 8de8a433013ef4a4f9c8ad1d84f3c4c2, type: 3}
+  - {fileID: 2562244940079066218, guid: 9103cae595654b94d84e6ac89dc2f4b9, type: 3}
+  - {fileID: 302376473033444599, guid: 505634bce775088438346850d511ebb4, type: 3}
+  - {fileID: 3972404107086223868, guid: e190447c76eea064084ade8cd76d77bc, type: 3}
+  - {fileID: 6098661575083820743, guid: 8869aca2665841e4bbbd1a1df0f4efa9, type: 3}
+  - {fileID: 321387677072624105, guid: 487d868d0b9520a48bb3636c372768c6, type: 3}
+  - {fileID: 4771710907620953129, guid: 96c164c6c5228f245b68052f5fde095c, type: 3}
+  - {fileID: 2219267972155290637, guid: 4f5f74c59cf87c7418f1e6bca67756e0, type: 3}
+  wallTiles:
+  - {fileID: 2211173701359801041, guid: dc22aecd78713804f89f96d3ece840ef, type: 3}
+  - {fileID: 2500391560321981436, guid: 04bfcecec5bcb4346a1f686c9483ba02, type: 3}
+  - {fileID: 8341301808825648489, guid: 4c8ff5b84a600734d909d70719837f41, type: 3}
+  - {fileID: 2850744781546794234, guid: a515ac5dff6a85947be32e1814456a20, type: 3}
+  - {fileID: 1433985619204875860, guid: 1ebc91d6c0806e649b6bfa9a16928963, type: 3}
+  - {fileID: 7398641992088334496, guid: fac810915c6ef4047af25ef9157e38d1, type: 3}
+  - {fileID: 1908888735190891562, guid: bde4a207ba824854e91d7b67e56553e6, type: 3}
+  - {fileID: 8941514155323599657, guid: 748caf66abeada54791dc2b3a06f9eac, type: 3}
+  foodTiles:
+  - {fileID: 3576078723103780462, guid: 8712b41138baeda4fb12f0200c09701c, type: 3}
+  - {fileID: 2733940050302911143, guid: f4503cd6e7e57274eb13d9995691a5c6, type: 3}
+  enemyTiles:
+  - {fileID: 4549097340496297902, guid: 9ae273a05c261d5498ff8b8aa23feef8, type: 3}
+  - {fileID: 98403442670497527, guid: eaca3e4d373980441aee52be9e314033, type: 3}
+  outerWallTiles:
+  - {fileID: 5536817306131316745, guid: f0ed9c4ea61faaa439f46df31de1721a, type: 3}
+  - {fileID: 6783332154658513026, guid: 3e36657ddd7818c479d8c947f42ee14b, type: 3}
+  - {fileID: 3863123289078344888, guid: 51dc0c0791c2d9b478f4d1620dd22aad, type: 3}
+--- !u!114 &1575914313400473321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2280985869098775782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b9c1baf0476ad4f838670ab99a3c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 1
+  turnDelay: 0.2
+  playerFoodPoints: 100
+  playersTurn: 1
